@@ -5,6 +5,7 @@ var mmaxRange = parseInt(maxCup);
 var mminRange = parseInt(minCup);
 var $rangeslider = $("#js-amount-range");
 var $amount = $("#monto-slider");
+var $mactual = parseInt($("#monto-actual").text().split(".").join("").split("$").join(""));
 
 $(document).ready(function(){
     minCup = minCup.replace(/([0-9])([0-9]{3})$/, "$1.$2")
@@ -26,6 +27,7 @@ $rangeslider.on("input", function(){
     valor_format = valor_format.replace(/([0-9])([0-9]{3})$/, "$1.$2")
     .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
     $amount[0].value = "$"+valor_format;
+    calculoMonto($mactual, this.value);
 });
 $amount.on({
     "focusout": function(){
@@ -35,14 +37,15 @@ $amount.on({
         $rangeslider.val(input_format).change();
     },
     "keyup": function(){
-        var dig_for = this.value;
-        dig_for = dig_for.replace(/([0-9])([0-9]{3})$/, "$1.$2")
-        .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
+        //var dig_for = this.value;
+        //dig_for = dig_for.replace(/([0-9])([0-9]{3})$/, "$1.$2")
+        //.replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
         if(this.value === ""){
             this.value = "$";
             $amount.removeClass("invalid valid");
         }else{
             this.value = formatMoney(this.value);
+            calculoMonto($mactual, this.value);
             //var new_val = this.value.split("$").join("").split(".").join().split(",").join("");
             //console.log(new_val);
             //$rangeslider.val(new_val).change();
@@ -50,6 +53,14 @@ $amount.on({
     }
 });
 
+function calculoMonto(v1,v2){
+    var nv2 = parseInt(v2.split("$").join("").split(".").join().split(",").join("")); 
+    var nv = v1 + nv2;
+    nv = nv.toString();
+    nv = nv.replace(/([0-9])([0-9]{3})$/, "$1.$2")
+    .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
+    $("#cup_Final").text("$"+nv);
+}
 
 
 //btn
