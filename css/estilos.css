@@ -1040,6 +1040,63 @@ strong{
         padding: 0 10px;
     }
 }
+@media (max-width:680px){
+    .input-adicional{
+        width: 100%;
+        padding-left: 15px;
+        padding: 15px 15px 0;
+    }
+    .cupo-final-nar{
+        width: 100%;
+        padding-left: 15px;
+        padding: 0 15px 15px;
+    }
+    .input-std{
+        padding-bottom: 5px;
+    }
+    .input-adicional .input-std{
+        margin-bottom: 0px;
+    }
+    .email-tel > .input-std{
+        margin-right: 0;
+        width: 100%;
+    }
+    .info-solicitud > ul > li{
+        width: 49%;
+        padding: 15px;
+    }
+    .montos-ad-fin, .confirma-datos, .superclave-cont{
+        margin: 15px 10px;
+    }
+    .comprobante-box{
+        text-align: left;
+    }
+    .montos-compr .data-monto:first-child{
+        padding-left: 10px;
+    }
+    .montos-compr .data-monto:last-child {
+        padding-right: 10px;
+    }
+    .data-monto{
+        width: 49%;
+        margin: 10px 0;
+        text-align: center;
+        overflow: hidden;
+    }
+    .data-monto > h3{
+        font-size: 26px;
+    }
+    .comprobante-box .texto-comprobante{
+        padding: 20px 15px;
+    }
+    .btn-cont .btn-comp:last-child{
+        display: none;
+    }
+    .btn-cont .btn-comp:first-child{
+        border-right: none;
+        width: 100%;
+    }
+}
 @media (max-width:596px){
     .cont-aumento{
         background: url(../img/1133563360-res.jpg);
