@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solicita aumento de cupo</title>
+    <link rel="stylesheet" href="css/santander-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="icons/general/css/_icons.css">
+</head>
+<body class="bg-std">
+    <div class="cont-aumento">
+        <h1>Solicita un aumento de cupo</h1>
+        <h2>En tu Tarjeta de Cr&eacute;dito</h2>
+        <div class="flujo-monto">
+            <div class="box">
+                <div class="info-tarjeta">
+                    <div class="tarjeta-visa-master">
+                        <div class="cont-img-card">
+                            <img src="img/Visa_Logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <p>Tarjeta de Cr&eacute;dito Titanio Santander LATAM PASS
+                            <span>**** **** **** 0617</span>
+                        </p>
+                    </div>
+                    <div class="cupo-actual">
+                        <p>Cupo actual:
+                            <span>$1.100.000</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="separador"></div>
+                <div class="slider-range">
+                    <p>Ingresa el monto adicional que solicitas</p>
+                    <div class="input-slider">
+                        <div class="input-std ">
+                            <input id="monto-slider" class="input-wicon digDot" maxlength="12" type="text">
+                            <span class="linea-input"></span>
+                            <span class='srt srt-edit'></span>
+                        </div>
+                    </div>
+                    <div class="slider-cont">
+                        <div class="text-slider-left">
+                            <span id="miCup"></span>
+                            <span>Min. a solicitar</span>
+                        </div>
+                        <div class="input-sldr">
+                            <input id="js-amount-range" type="range" min="50000" max="200000000" step="1000" value="200000000" data-rangeslider>
+                        </div>
+                        <div class="text-slider-right">
+                            <span id="maCup"></span>
+                            <span>Max. a solicitar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box cupo-final">
+                <span>Tu cupo final ser&aacute;</span>
+                <h3 id="cupFinal_step1">$3.000.000</h3>
+            </div>
+            <div class="btn-centrado">
+                <button id="btn-aumento" class="btn-std btn_primario">CONTINUAR <span class="icon-right-side srt srt-arrow-right"></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="condiciones">
+        <div class="box js-accordion js-accordion--active">
+            <div class="box__head js-accordion__trigger">
+                <p>Condiciones generales</p>
+                <span class='srt srt-arrow-up-1px'></span>
+            </div>
+            <div class="box__body">
+                <p class="box__body--conditions">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis suscipit sit fugit necessitatibus quam quo nemo expedita saepe vitae autem laboriosam quia exercitationem eos ullam libero asperiores sed tempora, officiis delectus iusto iste voluptas? Distinctio numquam necessitatibus, fuga a ullam maiores minus obcaecati iusto reiciendis tempore corporis aliquid ipsum quia. Culpa, rerum soluta ullam at veritatis provident qui ex nisi!
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

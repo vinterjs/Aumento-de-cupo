@@ -1,0 +1,138 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('eot'),
+		/*url('../fonts/icons/icons.woff2') format('woff2'),*/
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype'),
+		url('../fonts/icons/icons.svg#icons') format('svg');
+}
+
+.srt:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.srt-arrow-down-1px:before {
+	content: "\E001";
+}
+
+.srt-arrow-down:before {
+	content: "\E002";
+}
+
+.srt-arrow-left-1px:before {
+	content: "\E003";
+}
+
+.srt-arrow-left:before {
+	content: "\E004";
+}
+
+.srt-arrow-right-1px:before {
+	content: "\E005";
+}
+
+.srt-arrow-right:before {
+	content: "\E006";
+}
+
+.srt-arrow-up-1px:before {
+	content: "\E007";
+}
+
+.srt-arrow-up:before {
+	content: "\E008";
+}
+
+.srt-attention:before {
+	content: "\E009";
+}
+
+.srt-block:before {
+	content: "\E00A";
+}
+
+.srt-calendar:before {
+	content: "\E00B";
+}
+
+.srt-card:before {
+	content: "\E00C";
+}
+
+.srt-close:before {
+	content: "\E00D";
+}
+
+.srt-download:before {
+	content: "\E00E";
+}
+
+.srt-edit:before {
+	content: "\E00F";
+}
+
+.srt-email:before {
+	content: "\E010";
+}
+
+.srt-file:before {
+	content: "\E011";
+}
+
+.srt-help:before {
+	content: "\E012";
+}
+
+.srt-information:before {
+	content: "\E013";
+}
+
+.srt-isotype:before {
+	content: "\E014";
+}
+
+.srt-logo:before {
+	content: "\E015";
+}
+
+.srt-pdf:before {
+	content: "\E016";
+}
+
+.srt-phone:before {
+	content: "\E017";
+}
+
+.srt-plane:before {
+	content: "\E018";
+}
+
+.srt-print:before {
+	content: "\E019";
+}
+
+.srt-search:before {
+	content: "\E01A";
+}
+
+.srt-success:before {
+	content: "\E01B";
+}
+
+.srt-trash:before {
+	content: "\E01C";
+}
+
+.srt-user:before {
+	content: "\E01D";
+}

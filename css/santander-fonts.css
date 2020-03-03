@@ -1,0 +1,97 @@
+@font-face
+{
+	font-family:SantanderTextW05-Light;
+	src:url(fonts/SantanderTextW05-Light.eot#iefix);
+	src:url(fonts/SantanderTextW05-Light.eot#iefix) format("eot"),url(fonts/SantanderTextW05-Light.woff2) format("woff2"),url(fonts/SantanderTextW05-Light.woff) format("woff"),url(fonts/SantanderTextW05-Light.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-LightIt;
+	src:url(fonts/SantanderTextW05-LightIt.eot#iefix);
+	src:url(fonts/SantanderTextW05-LightIt.eot#iefix) format("eot"),url(fonts/SantanderTextW05-LightIt.woff2) format("woff2"),url(fonts/SantanderTextW05-LightIt.woff) format("woff"),url(fonts/SantanderTextW05-LightIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-Regular;
+	src:url(fonts/SantanderTextW05-Regular.eot#iefix);
+	src:url(fonts/SantanderTextW05-Regular.eot#iefix) format("eot"),url(fonts/SantanderTextW05-Regular.woff2) format("woff2"),url(fonts/SantanderTextW05-Regular.woff) format("woff"),url(fonts/SantanderTextW05-Regular.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-Italic;
+	src:url(fonts/SantanderTextW05-Italic.eot#iefix);
+	src:url(fonts/SantanderTextW05-Italic.eot#iefix) format("eot"),url(fonts/SantanderTextW05-Italic.woff2) format("woff2"),url(fonts/SantanderTextW05-Italic.woff) format("woff"),url(fonts/SantanderTextW05-Italic.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-Bold;
+	src:url(fonts/SantanderTextW05-Bold.eot#iefix);
+	src:url(fonts/SantanderTextW05-Bold.eot#iefix) format("eot"),url(fonts/SantanderTextW05-Bold.woff2) format("woff2"),url(fonts/SantanderTextW05-Bold.woff) format("woff"),url(fonts/SantanderTextW05-Bold.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-BoldItalic;
+	src:url(fonts/SantanderTextW05-BoldItalic.eot#iefix);
+	src:url(fonts/SantanderTextW05-BoldItalic.eot#iefix) format("eot"),url(fonts/SantanderTextW05-BoldItalic.woff2) format("woff2"),url(fonts/SantanderTextW05-BoldItalic.woff) format("woff"),url(fonts/SantanderTextW05-BoldItalic.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderHeadlineW05-Bold;
+	src:url(fonts/SantanderHeadlineW05-Bold.eot#iefix);
+	src:url(fonts/SantanderHeadlineW05-Bold.eot#iefix) format("eot"),url(fonts/SantanderHeadlineW05-Bold.woff2) format("woff2"),url(fonts/SantanderHeadlineW05-Bold.woff) format("woff"),url(fonts/SantanderHeadlineW05-Bold.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderHeadlineW05-Regular;
+	src:url(fonts/SantanderHeadlineW05-Rg.eot);
+	src:url(fonts/SantanderHeadlineW05-Rg.eot#iefix) format("eot"),url(fonts/SantanderHeadlineW05-Rg.woff2) format("woff2"),url(fonts/SantanderHeadlineW05-Rg.woff) format("woff"),url(fonts/SantanderHeadlineW05-Rg.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-Light;
+	src:url(fonts/SantanderMicroTextW01-Light.eot);
+	src:url(fonts/SantanderMicroTextW01-Light.eot#iefix) format("eot"),url(fonts/SantanderMicroTextW01-Light.woff2) format("woff2"),url(fonts/SantanderMicroTextW01-Light.woff) format("woff"),url(fonts/SantanderMicroTextLt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-LtIt;
+	src:url(fonts/SantanderMicroTextW01-LtIt.eot);
+	src:url(fonts/SantanderMicroTextW01-LtIt.eot#iefix) format("eot"),url(fonts/SantanderMicroTextW01-LtIt.woff2) format("woff2"),url(fonts/SantanderMicroTextW01-LtIt.woff) format("woff"),url(fonts/SantanderMicroTextLtIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-It;
+	src:url(fonts/SantanderMicroTextW01-It.eot);
+	src:url(fonts/SantanderMicroTextW01-It.eot#iefix) format("eot"),url(fonts/SantanderMicroTextW01-It.woff2) format("woff2"),url(fonts/SantanderMicroTextW01-It.woff) format("woff"),url(fonts/SantanderMicroTextIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-Bold;
+	src:url(fonts/SantanderMicroTextW01-Bold.eot);
+	src:url(fonts/SantanderMicroTextW01-Bold.eot#iefix) format("eot"),url(fonts/SantanderMicroTextW01-Bold.woff2) format("woff2"),url(fonts/SantanderMicroTextW01-Bold.woff) format("woff"),url(fonts/SantanderMicroTextBd.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-BdIt;
+	src:url(fonts/SantanderMicroTextW01-BdIt.eot);
+	src:url(fonts/SantanderMicroTextW01-BdIt.eot#iefix) format("eot"),url(fonts/SantanderMicroTextW01-BdIt.woff2) format("woff2"),url(fonts/SantanderMicroTextW01-BdIt.woff) format("woff"),url(fonts/SantanderMicroTextBdIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-Rg;
+	src:url(fonts/SantanderMicroTextW01-Rg.eot);
+	src:url(fonts/SantanderMicroTextW01-Rg.eot#iefix) format("eot"),url(fonts/SantanderMicroTextW01-Rg.woff2) format("woff2"),url(fonts/SantanderMicroTextW01-Rg.woff) format("woff"),url(fonts/SantanderMicroText.ttf) format("truetype")
+}
