@@ -37,18 +37,12 @@ $amount.on({
         $rangeslider.val(input_format).change();
     },
     "keyup": function(){
-        //var dig_for = this.value;
-        //dig_for = dig_for.replace(/([0-9])([0-9]{3})$/, "$1.$2")
-        //.replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
         if(this.value === ""){
             this.value = "$";
             $amount.removeClass("invalid valid");
         }else{
             this.value = formatMoney(this.value);
             calculoMonto($mactual, this.value);
-            //var new_val = this.value.split("$").join("").split(".").join().split(",").join("");
-            //console.log(new_val);
-            //$rangeslider.val(new_val).change();
         }
     }
 });
@@ -74,30 +68,21 @@ $("#btn-aumento").click(function(){
 
 //no letras ni caracteres especiales
 $('.digDot').keydown(function(event){
-    // Funcion que valida que solo se escriban numeros en un input
     var no_permitidas = ['!', '"', '$', '%', '&', '/', '(', ')', '=', '?', '¿', '*', '¨', '^', '{', '}', 'Ç', 'ç', 'ª', 'º', ',', 'Dead', '´', '+', '`', '_', '@', '#', '|', '¢', '∞', '¬', '÷', '”', '≠', '´'];
     var no_permitidas_eventkey = [192, 222, 16, 220, 187];
     var key;
-
     if( !event.charCode ){
         key = String.fromCharCode(event.which);
     }else{
         key = String.fromCharCode(event.charCode);
     }
-
     if( no_permitidas_eventkey.indexOf( event.keyCode ) !== -1 || no_permitidas.indexOf( event.key ) !== -1 ){
-        // Verifica si el caracter ingresado está dentro del array de las no permitidas
-        // Si se escriben las comillas (`) o (‘) o Shift pierde el foco
         $(this).blur();
     }
-
     if( event.keyCode !== 8 && event.keyCode !== 9 && event.keyCode !== 37 && event.keyCode !== 39 ){
-      // Permite el ingreso de Borrar, Tab, Flecha a la izquierda, Flecha a la derecha
         if ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105)){
-            // Si es numero, permite la accion
             return true;
         }else{
-            // Si no es numero, previene la escritura en el input
             event.preventDefault();
             return false;
         }
