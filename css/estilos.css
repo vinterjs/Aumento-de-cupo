@@ -1042,7 +1042,7 @@ strong{
 }
 @media (max-width:596px){
     .cont-aumento{
-        background: url(/img/1133563360-res.jpg);
+        background: url(../img/1133563360-res.jpg);
         background-size: contain;
         background-position: top right;
         background-repeat: no-repeat;

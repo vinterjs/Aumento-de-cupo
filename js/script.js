@@ -14,6 +14,11 @@ $(document).ready(function(){
     .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
     $("#miCup").text("$"+minCup);
     $("#maCup").text("$"+maxCup);
+    var nm = $mactual + mmaxRange;
+    nm = nm.toString();
+    nm = nm.replace(/([0-9])([0-9]{3})$/, "$1.$2")
+    .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
+    $("#cup_Final").text("$"+nm);
     $amount.val("$"+maxCup);
     $rangeslider.rangeslider({
         polyfill: false
@@ -33,7 +38,6 @@ $amount.on({
     "focusout": function(){
         var input_format = this.value;
         input_format = input_format.split("$").join("").split(".").join().split(",").join("");
-        console.log(input_format);
         $rangeslider.val(input_format).change();
     },
     "keyup": function(){
