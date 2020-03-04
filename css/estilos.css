@@ -842,6 +842,10 @@ strong{
     left: 5px;
     margin-top: -20px;
 }
+.top-comprobante .comprobante-ico.right-click{
+    right: 5px;
+    left: inherit;
+}
 .comprobante-ico .com-ico{
     text-indent: inherit;
     font-size: 44px;
@@ -853,6 +857,11 @@ strong{
     text-align: center;
     line-height: 1px;
     overflow: hidden;
+    cursor: pointer;
+}
+.comprobante-ico.right-click .com-ico{
+    font-size: 38px;
+    color: #444;
 }
 .top-comprobante .comprobante-titulo{
     vertical-align: middle;
@@ -1029,7 +1038,50 @@ strong{
 .btn-cont .btn-comp:first-child{
     border-right: 1px solid #ddd;
 }
-
+/*modal*/
+.modal-email{
+    display: none;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.mailm-modal{
+    max-width: 470px;
+    min-height: 230px;
+    margin-top: 10%;
+}
+.mailm-modal .top-comprobante{
+    position: relative;
+    padding: 7px 0px;
+    margin-left: 10px;
+}
+.mailm-modal .comprobante-titulo .text-com{
+    padding: 0px 20px 0 25px;
+}
+.moda-input-mail{
+    padding: 20px 45px 0;
+}
+.moda-input-mail .input-std{
+    margin-bottom: 5px;
+}
+.result-success{
+    display: none;
+}
+.result-success .moda-input-mail{
+    padding: 20px 15px 0;
+}
+.moda-input-mail p{
+    font-size: 16px;
+    line-height: 23px;
+    font-family:SantanderTextW05-Regular;
+    font-weight: 400;
+    padding: 10px 0px 20px 55px;
+}
+/*fin modal*/
 
 
 
@@ -1129,4 +1181,23 @@ strong{
         margin-right: 30%;
     }
     
+}
+@media (max-width:470px){
+    .mailm-modal{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .moda-input-mail{
+        padding: 20px 15px 5px;
+    }
+    .modal-email .top-comprobante .comprobante-ico{
+        left: 5px;
+    }
+    .modal-email .top-comprobante .comprobante-ico.right-click{
+        right: 5px;
+        left: inherit;
+    }
+    .moda-input-mail p{
+        padding: 10px 0px 20px 0px;
+    }
 }
