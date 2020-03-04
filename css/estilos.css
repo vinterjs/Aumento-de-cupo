@@ -159,6 +159,9 @@ strong{
  .btn_secundario.disabled:hover {
     box-shadow: inset 0px 0px 0px 1px #C2C2C2;
  }
+ .min-with{
+    min-width: 220px;
+ }
 /*fin btns*/
 .txt-center{
     text-align: center;
@@ -449,7 +452,7 @@ strong{
 /*fin StepBox*/
 /*fin step box*/
 .slider-range{
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 .slider-range > p{
     font-family:SantanderTextW05-Regular;
@@ -681,7 +684,11 @@ strong{
     display: block;
     margin: 0 auto;
     position: relative;
-    height: 40px;
+    height: 30px;
+    background-image: url(../img/dot.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
 }
 .slider-cont > .text-slider-left{
     position: absolute;
@@ -734,12 +741,12 @@ strong{
     padding: 20px 5px 0px;
 }
 .input-adicional{
-    padding-left: 92px;
-    width: 58.4%;
+    padding-left: 75px;
+    width: 57.4%;
 }
 .cupo-final-nar{
-    padding-right: 38px;
-    width: 39.4%;
+    padding-right: 60px;
+    width: 40.4%;
 }
 .input-adicional > span{
     display: block;
@@ -780,7 +787,8 @@ strong{
     list-style: none;
     width: 32.8%;
     vertical-align: top;
-    padding: 15px;
+    padding: 15px 20px;
+    overflow: hidden;
 }
 .info-solicitud > ul > li > span:first-child{
     display: block;
@@ -904,14 +912,14 @@ strong{
     display: inline-block;
     padding: 10px 15px;
     width: 49.5%;
-    margin: 15px 0;
+    margin: 5px 0 5px 0;
 }
 .montos-compr .data-monto:first-child{
-    padding-left: 150px;
+    padding-left: 120px;
     border-right: 1px solid #ddd;
 }
 .montos-compr .data-monto:last-child{
-    padding-right: 150px;
+    padding-right: 120px;
 }
 .data-monto > span{
     font-family:SantanderTextW05-Regular;
@@ -1115,7 +1123,7 @@ strong{
     }
     .info-solicitud > ul > li{
         width: 49%;
-        padding: 15px;
+        padding: 15px 20px;
     }
     .montos-ad-fin, .confirma-datos, .superclave-cont{
         margin: 15px 10px;
