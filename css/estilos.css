@@ -805,6 +805,12 @@ strong{
     line-height: 20px;
     font-size: 14px;
 }
+.tarjeta-dot{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
 .confirma-datos, .superclave-cont{
     max-width: 680px;
     margin: 15px auto;
@@ -1165,6 +1171,15 @@ strong{
         background-repeat: no-repeat;
         background-color: #171717;
     }
+    .tarjeta-visa-master{
+        display: none;
+    }
+    .info-tarjeta > .info-card{
+        padding: 0px 0px 0px 10px;
+    }
+    .info-tarjeta > .cupo-actual{
+        width: 31%;
+    }
     .flujo-monto{
         padding: 0 10px;
     }
@@ -1173,6 +1188,7 @@ strong{
     }
     .slider-cont{
         height: 70px;
+        background: none;
     }
     .slider-cont > .text-slider-right{
         top: 20px;
@@ -1187,6 +1203,9 @@ strong{
     .cont-aumento > h1, .cont-aumento > h2 {
         margin-left: 25px;
         margin-right: 30%;
+    }
+    .cupo-final-nar > span{
+        padding-top: 5px;
     }
     
 }
@@ -1207,5 +1226,8 @@ strong{
     }
     .moda-input-mail p{
         padding: 10px 0px 20px 0px;
+    }
+    .min-with{
+        width: 90%;
     }
 }

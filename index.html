@@ -29,6 +29,7 @@
                     </div>
                     <div class="cupo-actual">
                         <p>Cupo actual:
+                            <!-- DECLARAR AQUI EL MONTO ACTUAL DEL CLIENTE -->
                             <span id="monto-actual">$1.100.000</span>
                         </p>
                     </div>
@@ -49,6 +50,7 @@
                             <span>Min. a solicitar</span>
                         </div>
                         <div class="input-sldr">
+                            <!-- IMPORTANTE DEJAR EN EL ATRIBUTO MIN EL VALOR MINIMO, LO MISMO PARA EL CUPO MAXIMO Y EL VALOR -->
                             <input id="js-amount-range" type="range" min="50000" max="200000000" step="1000" value="200000000" data-rangeslider>
                         </div>
                         <div class="text-slider-right">
@@ -60,7 +62,7 @@
             </div>
             <div class="box cupo-final">
                 <span>Tu cupo final ser&aacute;</span>
-                <h3 id="cup_Final">$3.000.000</h3>
+                <h3 id="cup_Final"></h3>
             </div>
             <div class="btn-centrado">
                 <button id="btn-aumento" class="btn-std btn_primario min-with">SOLICITAR <span class="icon-right-side srt srt-arrow-right"></span></button>
