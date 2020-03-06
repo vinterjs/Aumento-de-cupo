@@ -93,14 +93,6 @@ $('.digDot').keydown(function(event){
     }
 });
 
-//condiciones
-if ($(".js-accordion").length) {
-    $(".js-accordion--active .box__body").hide();
-    $(".js-accordion").on("click", ".js-accordion__trigger", function() {
-        $(this).parents(".js-accordion").toggleClass("js-accordion--active"), $(this).next().slideToggle();
-    });
-}
-
 function formatMoney(valor){
     var i2, j2, valor1, unformatted;
     if( valor.length > 0 && valor.startsWith("$") ){

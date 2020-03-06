@@ -279,52 +279,7 @@ strong{
 .btn-centrado{
     text-align: center;
 }
-.condiciones{
-    max-width: 830px;
-    margin: 0 auto;
-}
-/* condiciones */
-.box__head {
-    padding: 15px;
-    border-bottom: solid 1px #dddddd;
-    position: relative;
-    cursor:pointer;
-  }
-  
-  .box__head p {
-    font-size: 14px;
-    font-family:SantanderMicroTextW01-Bold;
-    font-weight: bold;
-  }
-  
-  .box__head .srt {
-    color: #EC0000;
-    font-size: 39px;
-    line-height: 0px;
-    position: absolute;
-    right:5px;
-    top:25px;
-  }
-  .box__body {
-    padding: 0;
-    line-height: 120%;
-  }
-  .js-accordion--active .box__body{
-   
-  }
-  .box__body--conditions {
-    font-size: 12px;
-    line-height: 16px;
-    padding: 15px;
-    text-align: justify;
-    font-family:SantanderMicroTextW01-Rg;
-  }
-  .js-accordion.js-accordion--active .box__head .srt {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    top:20px;
-  }
-/*fin condiciones*/
+
 /*step box*/
 /*StepBox*/
 .step-box{
