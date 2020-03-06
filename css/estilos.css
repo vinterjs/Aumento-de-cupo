@@ -766,7 +766,7 @@ strong{
     white-space: nowrap;
     display: block;
 }
-.confirma-datos, .superclave-cont{
+.confirma-datos, .superclave-cont, .termino-condiciones{
     max-width: 680px;
     margin: 15px auto;
 }
@@ -786,9 +786,166 @@ strong{
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
-    width: 272px;
+    width: 95%;
+}
+/*termino condiciones*/
+.termino-condiciones > p{
+    font-family: SantanderMicroTextW01-Bold;
+    font-weight: bold;
+    color: #444;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 15px;
+}
+.termino-condiciones > p.p-term-condi{
+    font-family: SantanderTextW05-Regular;
+    font-weight: 400;
+    color: #444;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+}
+/*CHECKBOX*/
+.cb-st > *{
+    transition: all ease-out .2s;
+    -webkit-transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -o-transition: all ease-out .2s;
+}
+.cb-st{
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+.cb-st > label{
+    position: relative;
+}
+.cb-st > label::before{
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 25px;
+    border: 0px black;
+    background-color:inherit;
+    transition: all ease-out .2s;
+    -webkit-transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -o-transition: all ease-out .2s;
+}
+.cb-st > label:hover::before{
+    background-color: #f2f2f2;
+    width: 47px;
+    height: 47px;
+    top: -10px;
+    left: -13px;
+}
+.cb-st > label:active::before{
+    background-color: #edecec;
+}
+[type="checkbox"].check-std:not(:checked), [type="checkbox"].check-std:checked{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+[type="checkbox"].check-std+span{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 23px;
+    color: #444;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    user-select: none;
+    font-family: SantanderTextW05-Regular;
 }
 
+[type="checkbox"].check-std:checked+span:before{
+    top: 0;
+    left: 1px;
+    width: 4px;
+    height: 10px;
+    border-top: 2px solid #0000;
+    border-left: 2px solid #0000;
+    border-right: 3px solid #ADC000;
+    border-bottom: 3px solid #ADC000;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="checkbox"].check-std+span:before,
+[type="checkbox"].check-std+span:after{
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+}
+[type="checkbox"].check-std+span:before{
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 3px;
+}
+[type="checkbox"].check-std:checked+span:after{
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #444;
+    background-color: #fff;
+    z-index: 0;
+    border-radius: 5px;
+}
+[type="checkbox"].check-std:not(:checked)+span:before{
+    width: 0;
+    height: 0;
+    border: 3px solid #0000;
+    left: 6px;
+    top: 10px;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="checkbox"].check-std:not(:checked)+span::after{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    top: 0px;
+    z-index: 0;
+}
+[type="checkbox"].check-std:checked:disabled+span:before
+{
+    border-right: 3px solid #c2c2c2;
+    border-bottom: 3px solid #c2c2c2;
+}
+[type="checkbox"].check-std:checked:disabled+span:after,
+[type="checkbox"].check-std:disabled+span:after{
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+}
+[type="checkbox"].check-std:checked:disabled+span,
+[type="checkbox"].check-std:disabled+span{
+    color: #c2c2c2
+}
+[type="checkbox"].check-std:disabled,
+[type="checkbox"].check-std:disabled+span{
+    cursor: default;
+}
+/*FIN CHECKBOX*/
+/* fin termino condiciones */
+
+/*superclave*/
+.superclave-cont{
+    display: none;
+}
+/*fin superclave*/
 
 /*comprobantes*/
 .comprobante-box{

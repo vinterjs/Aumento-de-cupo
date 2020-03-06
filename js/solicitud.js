@@ -69,6 +69,15 @@ $("#monto-editar").focusout(function(){
         $(this).removeClass("invalid valid");
     }
 });
+//terminos y condiciones
+$("#check-terms").click(function(){
+    if( $(this).is(":checked") ){
+        $(".superclave-cont").slideDown();
+    }else{
+        $(".superclave-cont").slideUp();
+    }
+});
+
 
 $('.montoNumber').keydown(function(event){
     // Funcion que valida que solo se escriban numeros en un input
