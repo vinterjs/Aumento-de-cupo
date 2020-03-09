@@ -34,6 +34,7 @@ $(".input-std input.telefono").focusout(function(){
 //mail
 $(".email").focusout(function(){
     isMail($(this).val(), $(this));
+    checkValidacion()
 });
 
 $(".monto").keyup(function(e){
@@ -68,6 +69,7 @@ $("#monto-editar").focusout(function(){
         $(this).val("$");
         $(this).removeClass("invalid valid");
     }
+    checkValidacion();
 });
 //terminos y condiciones
 $("#check-terms").click(function(){
@@ -238,4 +240,16 @@ function formatMoney(valor){
         returned = "";
     }
     return returned;
+}
+
+function checkValidacion(){
+    var email_val = $("#email-solicitud");
+    var monto_val = $("#monto-editar");
+    if(email_val.hasClass("valid") && monto_val.hasClass("valid")){
+        $("#check-terms").removeAttr("disabled");
+    }else{
+        $("#check-terms").attr("disabled", "disabled");
+        $("#check-terms").prop("checked", false).change();
+        $(".superclave-cont").slideUp();
+    }
 }

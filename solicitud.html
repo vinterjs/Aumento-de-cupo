@@ -34,7 +34,7 @@
             <div class="input-adicional">
                 <span>Monto adicional</span>
                 <div class="input-std">
-                    <input id="monto-editar" class="input-wicon montoNumber" type="text" value="$1.000.000">
+                    <input id="monto-editar" class="input-wicon montoNumber valid" type="text" value="$1.000.000">
                     <span class="linea-input"></span>
                     <span class='srt srt-edit'></span>
                     <span class="msj-input-error"></span>
@@ -54,11 +54,11 @@
             </div>
         </div>
         <div class="box confirma-datos">
-            <p>Confirma tus datos de contacto</p>
+            <p>Ingresa tus datos de contacto</p>
             <div class="separador"></div>
             <div class="email-tel">
                 <div class="input-std">
-                    <input class="email" type="text" required autocomplete="off" value="hola@adios.cl" >
+                    <input id="email-solicitud" class="email" type="text" required autocomplete="off" >
                     <label>E-mail</label>
                     <span class="linea-input"></span>
                     <span class="msj-input-error">Ingrese un e-mail v&aacute;lido.</span>
@@ -74,7 +74,7 @@
             <div class="separador"></div>
             <p class="cb-st">
                 <label>
-                    <input id="check-terms" type="checkbox" class="check-std">
+                    <input id="check-terms" type="checkbox" class="check-std" disabled>
                     <span>Formulo la solicitud de aumento de cupo y acepto los t&eacute;rminos y condiciones.</span>
                 </label>
             </p>
