@@ -37,11 +37,19 @@ $rangeslider.on("input", function(){
 $amount.on({
     "focusout": function(){
         var input_format = this.value;
-        input_format = input_format.split("$").join("").split(".").join().split(",").join("");
-        $rangeslider.val(input_format).change();
+        if(input_format === "$"){
+            input_format = maxCup.split("$").join("").split(".").join().split(",").join("");
+            $rangeslider.val(input_format).change();
+            input_format = input_format.replace(/([0-9])([0-9]{3})$/, "$1.$2")
+            .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
+            this.value = "$"+input_format;
+        }else{
+            input_format = input_format.split("$").join("").split(".").join().split(",").join("");
+            $rangeslider.val(input_format).change(); 
+        }
     },
     "keyup": function(){
-        if(this.value === ""){
+        if(this.value === "" || this.value === "$"){
             this.value = "$";
             $amount.removeClass("invalid valid");
         }else{
